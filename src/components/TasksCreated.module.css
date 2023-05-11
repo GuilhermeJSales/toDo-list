@@ -1,0 +1,63 @@
+.checkTaskUl{
+  margin-top:1.56rem;
+  font-size:.875rem;
+  display:flex;
+  flex-direction: column;
+  gap:0.75rem;
+}
+
+.checkTaskLi{
+  background: var(--gray-500);
+  border:1px solid var(--gray-400);
+  border-radius:8px;
+  min-width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding:1rem;
+  gap: .75rem;
+  transition: background-color .3s ease-in-out;
+}
+
+.checkTaskLi:hover{
+  background-color:var(--gra-600);
+}
+
+
+
+.checkTaskLi > div{
+  display:flex;
+  align-items: flex-start;
+  line-height: inherit;
+  gap: .75rem;
+}
+
+.checkBox{
+  background:transparent;
+  width:1.5rem;
+  height:1.5rem;
+  border-radius:50%;
+  border:2px solid var(--blue);
+  cursor: pointer;
+}
+
+.checkBox:hover{
+  border:2px solid var(--purple);
+}
+
+.checkTaskLi > div > p{
+  line-height: 1.4;
+}
+
+.DeleteTask{
+  background:transparent;
+  border:0;
+  color:var(--gray-300);
+  line-height: 0;
+  cursor: pointer;  
+}
+
+
+.DeleteTask:hover{
+  color:var(--danger);
+}
