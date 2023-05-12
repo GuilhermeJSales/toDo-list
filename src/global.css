@@ -26,6 +26,7 @@ body{
   background:var(--gray-600);
   color:var(--gray-100);
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
 }
 
 
@@ -37,11 +38,17 @@ body, input, button {
 }
 
 
-.container {
-  max-width: 47.75rem;
-  margin:0 auto;
-  padding: 4rem 1rem;
+.container{
+  max-width: 46rem;
+  margin: 4rem auto;
+  padding: 0 1rem; 
+}
 
-  display:grid;
-  grid-template-columns: 1fr;
+
+
+
+@media (max-width:768px){
+  html{
+    font-size: 87.5%;
+  }
 }

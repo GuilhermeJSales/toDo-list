@@ -34,6 +34,12 @@
 
 .checkBox{
   background:transparent;
+  border:none;
+  outline:none;
+}
+
+.checkBox > div{
+  background:transparent;
   width:1.5rem;
   height:1.5rem;
   border-radius:50%;
@@ -41,7 +47,30 @@
   cursor: pointer;
 }
 
-.checkBox:hover{
+.checkBox > div.active{
+  background:var(--purple);
+  width:1.5rem;
+  height:1.5rem;
+  border-radius:50%;
+  border:0;
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkBox svg {
+  color:var(--white);
+  background:var(--purple);
+  border-radius: 50%;
+  border:0;
+}
+
+.checkBox > div.active:hover{
+  border:0;
+}
+
+.checkBox > div:hover{
   border:2px solid var(--purple);
 }
 
@@ -57,6 +86,11 @@
   cursor: pointer;  
 }
 
+
+.completeTask{
+  text-decoration: line-through;
+  color:var(--gray-300);
+}
 
 .DeleteTask:hover{
   color:var(--danger);

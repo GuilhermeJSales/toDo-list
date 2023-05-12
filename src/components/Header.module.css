@@ -1,6 +1,9 @@
 .header {
   background:var(--gray-700);
   height: 12.5rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   position:relative;
 }
 
@@ -25,18 +28,23 @@
 .headerForm{
   display:flex;
   align-items: center;
-  gap:8px;
+  gap:0.5rem;
   position:absolute;
   bottom: calc(-3.375rem / 2);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46rem;
+  max-width: 100%;
+  padding: 0 1rem;
 }
 
 .headerForm input{
   color:var(--gray-100);
   background:var(--gray-500);
   padding:1rem;
-  width: 39.875rem;
+  flex:1;
   border:1px solid var(--gray-700);
-  border-radius:8px;
+  border-radius:0.5rem;
   outline:none;
 }
 
@@ -62,4 +70,11 @@
 
 .headerForm button[type="submit"]:hover{
   background:var(--blue);
+}
+
+
+@media (max-width: 360px) {
+  .headerForm input{
+    max-width:70%;
+  }
 }

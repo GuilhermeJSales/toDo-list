@@ -24,7 +24,6 @@ export function Header({onCreateTaskObject}: HeaderProps){
 
   return (
     <header className={styles.header}>
-      <div className='container'>
         <div className={styles.headerLogo}>
           <img src={toDoLogo} alt="logotipo toDo List" />
           <h1 className={styles.headerTitle}>to<span>do</span></h1>
@@ -39,7 +38,6 @@ export function Header({onCreateTaskObject}: HeaderProps){
           />
           <button type='submit'>Criar <PlusCircle color="#F2F2F2" size={20}/></button>
         </form>
-      </div>
       
     </header>
   )
