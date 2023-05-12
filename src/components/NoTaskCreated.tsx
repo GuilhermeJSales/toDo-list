@@ -1,4 +1,4 @@
-import clipBoard from '../assets/clipboard.svg'
+import clipBoard from '../assets/Clipboard.svg'
 import styles from './NoTaskCreated.module.css'
 
 export function NoTaskCreated(){
